@@ -5,6 +5,7 @@ type ListNode struct {
     Next *ListNode
 }
 
+//结构体函数传参不需用*取出，基本类型需要
 func removeElements(head *ListNode, val int) *ListNode {
 	if head == nil {return head}
 	for ;head != nil; {
